@@ -15,7 +15,8 @@ class IdeasController < ApplicationController
   # GET /ideas/new
   def new
     @idea = Idea.new
-    @idea.name = "アイデア-#{Idea.maximum(:id) + 1}"
+    max_id = Idea.maximum(:id) || 0
+    @idea.name = "アイデア-#{max_id + 1}"
   end
 
   # GET /ideas/1/edit
