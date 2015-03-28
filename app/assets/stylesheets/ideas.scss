@@ -1,3 +1,36 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.idea-list {
+  .row {
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #DDD;
+  }
+  .idea-list-header {
+    * {
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 992px) {
+    .row {
+      padding: 12px 10px;
+      margin-bottom: 10px;
+      border: 1px solid #DDD;
+      border-radius: 10px; 
+    }
+    .idea-name {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    .idea-actions {
+      margin-top: 10px;
+    }
+    .idea-picture {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
